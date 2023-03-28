@@ -13,7 +13,7 @@ public class Main {
         Curso curso2 = new Curso();
         curso2.setTitulo("Curso de JS");
         curso2.setDescricao("Curso de JS");
-        curso2.setCargaHoraria(8);
+        curso2.setCargaHoraria(4);
 
         Mentoria mentoria = new Mentoria();
         mentoria.setTitulo("Mentoria JAVA");
@@ -21,7 +21,6 @@ public class Main {
         mentoria.setData(LocalDate.now());
 
 //      Conteudo conteudo = new Curso();
-//
 //        System.out.println(curso1);
 //        System.out.println(curso2);
 //        System.out.println(mentoria);
@@ -34,24 +33,16 @@ public class Main {
 
         Dev devAriane = new Dev();
         devAriane.setNome("Ariane");
-        devAriane.inscreverBootCamo(bootCamp);
-
+        devAriane.inscreverBootCamp(bootCamp);
         System.out.println("Conteúdos inscritos: " + devAriane.getNome() + devAriane.getConteudosInscritos());
-
         devAriane.progredir();
-
         System.out.println("-");
-
         System.out.println("Conteúdos inscritos: " + devAriane.getNome() + devAriane.getConteudosInscritos());
-
         System.out.println("Conteúdos concluidos: " + devAriane.getNome() + devAriane.getConteudosConcluidos());
-
         System.out.println("XP: " + devAriane.calcularTotalXP());
         devAriane.progredir();
         System.out.println("Conteúdos inscritos: " + devAriane.getNome() + devAriane.getConteudosInscritos());
-
         System.out.println("Conteúdos concluidos: " + devAriane.getNome() + devAriane.getConteudosConcluidos());
-
         System.out.println("XP: " + devAriane.calcularTotalXP());
 
         System.out.println("------------------");
@@ -59,24 +50,17 @@ public class Main {
         Dev devNicolas = new Dev();
 
         devNicolas.setNome("Nicolas");
-        devNicolas.inscreverBootCamo(bootCamp);
-
+        devNicolas.inscreverBootCamp(bootCamp);
         System.out.println("Conteúdos inscritos: "+ devNicolas.getNome() + devNicolas.getConteudosInscritos());
-
         devNicolas.progredir();
-
         System.out.println("-");
-
         System.out.println("Conteúdos inscritos: "+ devNicolas.getNome() + devNicolas.getConteudosInscritos());
-
         System.out.println("Conteúdos concluidos: "+ devNicolas.getNome() + devNicolas.getConteudosConcluidos());
         devNicolas.progredir();
         devNicolas.progredir();
         System.out.println("-");
-
         System.out.println("Conteúdos inscritos: "+ devNicolas.getNome() + devNicolas.getConteudosInscritos());
-
         System.out.println("Conteúdos concluidos: "+ devNicolas.getNome() + devNicolas.getConteudosConcluidos());
-
+        System.out.println("XP: " + devNicolas.calcularTotalXP());
     }
 }
